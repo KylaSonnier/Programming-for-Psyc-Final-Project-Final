@@ -4,7 +4,11 @@
 Data Analysis Plan: In this data analysis, I am examining whether increased levels of major depressive episodes are correlated to higher rates of school suspension and expulsion, whether exclusionary school discipline is associated with over-representation in arrests, and whether there is a relationship between adolescent mental-health prevalence and juvenile arrests that differs across racial, socioeconomic, and geographic contexts. This analysis will utilize 8 variables from the State-Level Data on Juvenile Delinquency and Violence, Mental-Health and Psychotropic-Medication Related Issues, and School Accountability, United States, 1990-2014 (ICPSR 36775) dataset (Tcherni-Buzzeo, 2019). These variables include adolescent major depressive episodes ages 12-17 (mde1217), suspensions per 1,000 students enrolled at the state-level (suspend), expulsions per 1,000 students enrolled at the state-level (expel), violent-crime arrests under age 18 (jarviol), property-crime arrests under age 18 (jarprop), percentage of Black population (pblack), childhood poverty rates (chpov), and urban population percentage (purban). By investigating this unique combination of variables, this study aims to paint a clearer picture of how schools may serve as a critical crossroads in pathways connecting psychological distress to disproportionate punitive punishment.
 
 # Research Questions
-1) Do states with more adolescent major depressive episodes also report higher rates of school suspensions and expulsions? (2) Are higher rates of exclusionary school discipline associated with over-representation in arrests relative to adults at the state level? (3) Does the relationship between adolescent mental-health prevalence and juvenile arrests relative to adults differ across contexts of racial, socioeconomic, and geographic marginalization?
+(1) Do states with more adolescent major depressive episodes also report higher rates of school suspensions and expulsions? 
+
+(2) Are higher rates of exclusionary school discipline associated with over-representation in arrests relative to adults at the state level? 
+
+(3) Does the relationship between adolescent mental-health prevalence and juvenile arrests relative to adults differ across contexts of racial, socioeconomic, and geographic marginalization?
 
 # Analyses Run
 For RQ1A, state-fixed-effects regression models were estimated to assess the association between adolescent depression prevalence and school discipline outcomes, while controlling for unobserved, time-invariant state characteristics. Cluster-robust standard errors at the state level were used to account for within-state dependence across years. Fixed effects models were selected to isolate within-state associations over time while accounting for stable differences between states that could confound cross-sectional comparisons.
@@ -47,7 +51,7 @@ scales
 To run this code, you need R version 4.0 or higher.
 
 # File Conversion
-The original file is in the .sav format. Trying to open the data set in R directly will result in an error. To use the data set in R you must just the function read.sav() to import the data.
+The original file is in the .sav format. Trying to open the data set in R directly will result in an error. To use the data set in R, you must use the function read.sav() to import the data.
 
 # How to Run
 Open the .R script file titled "PP Final Data Analysis Project.R". Lines 1 through 10 import necessary R packages. Lines 12 through 13 load the data set. Lines 15 through 210 isolate the variables required for the analyses, clean up the descriptive statistics, and create a variables table and descriptive statistics tables. Lines 212 through 225 clean the data set to prepare to run analyses. Lines 227 through 292 run analyses to evaluate research question 1. Lines 294 through 380 run analyses to evaluate research question 2. Lines 382 through 448 run analyses to evaluate research question 3. Lines 450 to 480 create and save visual plots.
@@ -58,4 +62,7 @@ Open the .R script file titled "PP Final Data Analysis Project.R". Lines 1 throu
 # Table 2: Descriptive Statistics for State-Level Study Variables
 <img width="1584" height="1242" alt="image" src="https://github.com/user-attachments/assets/11ec52f9-4bf4-40b6-a635-6c9a790335a1" />
 
-
+# Reference
+Tcherni-Buzzeo, M. (2019). State-level data on juvenile delinquency and violence, mental-health and psychotropic-medication related issues, and school accountability, United States,
+1990-2014 (ICPSR 36775, Version V1) [Data set]. Inter-university Consortium for
+Political and Social Research. https://doi.org/10.3886/ICPSR36775.v1
